@@ -1,0 +1,15 @@
+{
+    "name": "docs",
+    "version": "0.0.1",
+    "private": true,
+    "type": "module",
+    "scripts": {
+      "dev": "vitepress dev",
+      "build": "vitepress build",
+      "preview": "vitepress preview",
+      "lint": "echo \"No lint for docs\""
+    },
+    "devDependencies": {
+      "vitepress": "^1.6.3"
+    }
+  }

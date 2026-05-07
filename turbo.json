@@ -1,0 +1,21 @@
+{
+  "$schema": "https://turborepo.dev/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", ".vitepress/dist/**"]
+    },
+    "preview": {
+      "dependsOn": ["^build"],
+      "persistent": true
+    },
+    "lint": {},
+    "test": {},
+    "test:e2e": {}
+  }
+}
